@@ -12,11 +12,12 @@ public abstract class FileProcessor {
     }
 
     public final int process(Operator operator) {
+
         try(BufferedReader reader = new BufferedReader(new FileReader(path))) {
             int result = 0;
             String line = null;
             while((line = reader.readLine()) != null) {
-                result = getResult(result, Integer.parseInt(line));
+                result = operator.getResult(result, Integer.parseInt(line));
             }
             return result;
         } catch (IOException e) {

@@ -3,6 +3,9 @@ package me.whiteship.designpatterns._03_behavioral_patterns._22_template._02_cal
 public class Client {
 
     public static void main(String[] args) {
+        /**
+         * 내가 생각하기에 더 완변한 템플릿 메서드 패턴은 Default 구현체를 둬서 path 설정만 해주고, 실제 적용할 구현체는 .process() 안에 인자를 넣는 방식인것 같음
+         */
         FileProcessor fileProcessor = new Multiply("number.txt");
 
         /**
