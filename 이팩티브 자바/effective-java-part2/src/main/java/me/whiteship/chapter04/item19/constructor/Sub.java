@@ -8,6 +8,7 @@ public final class Sub extends Super {
     private final Instant instant;
 
     Sub() {
+        //사실 여이게 super() 이 생략 된것임
         instant = Instant.now();
     }
 

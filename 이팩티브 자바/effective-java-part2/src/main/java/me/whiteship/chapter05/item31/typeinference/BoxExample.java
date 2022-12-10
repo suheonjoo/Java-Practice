@@ -29,7 +29,9 @@ public class BoxExample {
 
     public static void main(String[] args) {
         ArrayList<Box<Integer>> listOfIntegerBoxes = new ArrayList<>();
-        BoxExample.addBox(10, listOfIntegerBoxes);
+
+        BoxExample.<Integer>addBox(10, listOfIntegerBoxes);
+
         BoxExample.addBox(20, listOfIntegerBoxes);
         BoxExample.addBox(30, listOfIntegerBoxes);
         BoxExample.outputBoxes(listOfIntegerBoxes);
@@ -37,6 +39,7 @@ public class BoxExample {
         // Target Type
         List<String> stringlist = Collections.emptyList();
         List<Integer> integerlist = Collections.emptyList();
+
         BoxExample.processStringList(Collections.emptyList());
     }
 }

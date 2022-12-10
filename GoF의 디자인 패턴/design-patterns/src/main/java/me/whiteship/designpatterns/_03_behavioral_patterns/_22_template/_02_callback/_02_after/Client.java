@@ -1,5 +1,10 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._22_template._02_callback._02_after;
 
+/**
+ * 템플릿 콜백 패턴: 템플릿 메서드 패턴과 다르게 상속을 사용하지 않고 확장간으(getResult 부분)하게 하는것
+ * 이펙티브 자바2 패키지 아이템20에 구현해 놓음
+ *
+ */
 public class Client {
 
     public static void main(String[] args) {

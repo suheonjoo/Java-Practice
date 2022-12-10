@@ -11,7 +11,7 @@ class Point {
     }
 
     public double getX() {
-        // 부가 작업
+        //Todo: 여기서 부가 작업 가능
         return x;
     }
     public double getY() { return y; }

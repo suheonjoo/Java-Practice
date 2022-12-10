@@ -29,6 +29,9 @@ public class Stack<E extends Number> {
     public E pop() {
         if (size == 0)
             throw new EmptyStackException();
+        /**
+         * push에서 E 타입만 들어올수 있게 해놓아서 이코드는 안전하다 그러므녀 @SupressWaring 사용가능
+         */
         @SuppressWarnings("unchecked") E result = (E)elements[--size];
         elements[size] = null; // 다 쓴 참조 해제
         return result;

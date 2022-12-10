@@ -12,5 +12,7 @@ public class Service {
         BobFunction bobFunction = new BobFunction(service);
         BobFunctionWrapper bobFunctionWrapper = new BobFunctionWrapper(bobFunction);
         bobFunctionWrapper.run();
+        //밥을 먹을까 하고 커피도 먹을까 호출하면 아래처럼 call 을 호출하면 됨
+        //bobFunctionWrapper.call();
     }
 }

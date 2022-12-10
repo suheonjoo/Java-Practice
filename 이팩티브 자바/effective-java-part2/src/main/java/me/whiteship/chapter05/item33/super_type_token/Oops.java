@@ -3,6 +3,9 @@ package me.whiteship.chapter05.item33.super_type_token;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 이거 수퍼 타입 토큰 을 깨트리는 코드임!!
+ */
 class Oops {
     static Favorites2 f = new Favorites2();
 

@@ -20,6 +20,10 @@ public class Favorites {
     public static void main(String[] args) {
         Favorites favorites = new Favorites();
         favorites.put(String.class, "keesun");
+
+        favorites.put( (Class) String.class, 1);
+
+
         favorites.put(Integer.class, 2);
 
 //        favorites.put(List<Integer>.class, List.of(1, 2, 3));

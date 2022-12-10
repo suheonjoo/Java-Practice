@@ -20,7 +20,14 @@ public class SafeVaragsExample {
     }
 
     public static void main(String[] args) {
+        /**
+         * 단순히 출려기 기능으로 에러가 안나는 코드
+         */
         SafeVaragsExample.safe("a", "b", "c");
+
+        /**
+         * 에러가 나는 것
+         */
         SafeVaragsExample.notSafe(List.of("a", "b", "c"));
     }
 

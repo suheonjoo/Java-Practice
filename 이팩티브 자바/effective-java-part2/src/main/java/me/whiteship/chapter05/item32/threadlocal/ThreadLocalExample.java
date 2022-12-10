@@ -8,7 +8,11 @@ public class ThreadLocalExample implements Runnable {
     // SimpleDateFormat is not thread-safe, so give one to each thread
     private static final ThreadLocal<SimpleDateFormat> formatter = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyyMMdd HHmm"));
 
-//    private SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd HHmm");
+    /**
+     * SimpleDateFormat 는 thread safe 하지 않음
+     *
+     */
+    //    private SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd HHmm");
 
     public static void main(String[] args) throws InterruptedException {
         ThreadLocalExample obj = new ThreadLocalExample();

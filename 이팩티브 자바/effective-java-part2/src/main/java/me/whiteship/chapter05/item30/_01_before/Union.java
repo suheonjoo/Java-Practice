@@ -13,6 +13,12 @@ public class Union {
         return result;
     }
 
+    // 서로 다른 제네릭 타입으로 메개변수를 받을수 있나? 안됨 ㅎ
+    // public static void union(Set<E> s1, Set<D> s2) {
+    //     System.out.println(s1);
+    //     System.out.println(s2);
+    // }
+
     // 코드 30-3 제네릭 메서드를 활용하는 간단한 프로그램 (177쪽)
     public static void main(String[] args) {
         Set<String> guys = Set.of("톰", "딕", "해리");
