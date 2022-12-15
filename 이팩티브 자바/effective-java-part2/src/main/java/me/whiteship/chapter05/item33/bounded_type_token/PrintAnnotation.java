@@ -13,7 +13,8 @@ public class PrintAnnotation {
         } catch (Exception ex) {
             throw new IllegalArgumentException(ex);
         }
-        return element.getAnnotation(annotationType.asSubclass(Annotation.class));
+        Class<? extends Annotation> aClass = annotationType.asSubclass(Annotation.class);
+        return element.getAnnotation(aClass);
     }
 
     // 명시한 클래스의 명시한 애너테이션을 출력하는 테스트 프로그램

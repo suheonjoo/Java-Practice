@@ -26,6 +26,10 @@ public class NamedPoint extends Point {
         NamedPoint p1 = new NamedPoint(1, 0, "keesun");
         NamedPoint p2 = new NamedPoint(1, 0, "whiteship");
 
+        Point point1 = new Point(1, 2);
+        Point point2 = new Point(1, 2);
+        point1.compareTo(point2);
+
         Set<NamedPoint> points = new TreeSet<>(new Comparator<NamedPoint>() {
             @Override
             public int compare(NamedPoint p1, NamedPoint p2) {

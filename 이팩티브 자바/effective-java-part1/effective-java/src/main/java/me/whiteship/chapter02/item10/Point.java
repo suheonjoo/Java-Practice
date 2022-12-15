@@ -20,7 +20,7 @@ public class Point {
             return true;
         }
 
-        //instanceof 로 타입 비교
+        //instanceof 로 타입 비교 - 이거 하위 타입 들어와도 if 문 안으로 들어가지 않음
         if (!(o instanceof Point)) {
             return false;
         }

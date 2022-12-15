@@ -2,6 +2,11 @@ package me.whiteship.chapter04.item25;
 
 // 코드 25-3 톱레벨 클래스들을 정적 멤버 클래스로 바꿔본 모습 (151-152쪽)
 public class Test {
+
+    /**
+     * 이거 지금 main 메서드다 즉 위부에 있는 static 메서드
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println(Utensil.NAME + Dessert.NAME);
     }

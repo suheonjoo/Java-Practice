@@ -8,6 +8,10 @@ import java.util.Set;
 
 // CounterPoint를 Point로 사용하는 테스트 프로그램
 public class CounterPointTest {
+    /**
+     * 이때 Point의 Equals 사용함
+     * 당연 ㅎ Set 은 공통원소인지 체크해줘야 하니깐 ㅎ
+     */
     // 단위 원 안의 모든 점을 포함하도록 unitCircle을 초기화한다. (58쪽)
     private static final Set<Point> unitCircle = Set.of(
             new Point( 1,  0), new Point( 0,  1),
@@ -24,7 +28,7 @@ public class CounterPointTest {
         // true를 출력한다.
         System.out.println(onUnitCircle(p1));
 
-        // true를 출력해야 하지만, Point의 equals가 getClass를 사용해 작성되었다면 그렇지 않다.
+        // true를 출력해야 하지만, Point의 equals가 getClass를 사용해 작성되었다면 그렇지 않다 (false 를 반환한다).
         System.out.println(onUnitCircle(p2));
     }
 }

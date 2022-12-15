@@ -1,5 +1,10 @@
 package me.whiteship.designpatterns._01_creational_patterns._02_factory_method._02_after;
 
+/**
+ * Creator: ShipFactory
+ * ConcreteCreator, Product: DefaultShipFactory 추상 클래스
+ * ConcreteProduct : BlackshipFactory, WhiteshipFactory
+ */
 public interface ShipFactory {
 
     default Ship orderShip(String name, String email) {
