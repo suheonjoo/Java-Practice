@@ -2,7 +2,11 @@ package me.whiteship.designpatterns._02_structural_patterns._12_proxy._02_after;
 
 public class GameServiceProxy implements GameService {
 
-    private GameService gameService;
+    /**
+     * GameService 를 상속 받으면, GameService 를 필드로 가지고 있다
+     */
+    private GameService gameService; //상속 받은 것을 필드로 가지고 있다
+
 
     @Override
     public void startGame() {

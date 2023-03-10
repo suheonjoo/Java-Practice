@@ -13,7 +13,7 @@ public class StudyService {
     private final StudyRepository repository;
 
     public StudyService(MemberService memberService, StudyRepository repository) {
-        assert memberService != null;
+        assert memberService != null; //여기서 실패하면 AssertException 이 뜬다
         assert repository != null;
         this.memberService = memberService;
         this.repository = repository;
